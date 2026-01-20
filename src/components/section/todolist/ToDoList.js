@@ -41,7 +41,7 @@ todos.forEach((todo, index) => {
     todo.prioridad === "urgente" ? "Urgente" : "Normal";
 
   const btnDelete = document.createElement("button");
-  btnDelete.textContent = "❌";
+  btnDelete.textContent = "🗑️";
 
   btnDelete.addEventListener("click", () => {
     todos.splice(index, 1);
