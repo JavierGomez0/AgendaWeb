@@ -1,3 +1,3 @@
-import {login } from "/src/components/section/Login.js";
-let root = document.getElementById("root");
+import { login } from "./components/section/login/Login.js";
+const root = document.getElementById("root");
 root.appendChild(login());
