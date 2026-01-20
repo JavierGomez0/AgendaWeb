@@ -1,4 +1,4 @@
-import { ContactList } from "./db.js";
+import { getContactsFromStorage, saveContactsToStorage } from "./storage.js";
 let nuevoContacto = () => {
 
   let section = document.createElement("form");
@@ -26,6 +26,7 @@ let nuevoContacto = () => {
   btnCancel.type = "button";
   btnCancel.textContent = "Cancelar";
 
+  section.appendChild(h3);
   section.appendChild(userName);
   section.appendChild(telefono);
   section.appendChild(btnSubmit);
@@ -39,8 +40,15 @@ let nuevoContacto = () => {
       telefono: telefono.value,
     };
 
+        const contactos = getContactsFromStorage();
+    contactos.push(contacto);
+    saveContactsToStorage(contactos);
+
+    // Limpiar formulario
+    userName.value = "";
+    telefono.value = "";
+
     console.log("Nuevo contacto:", contacto);
-    ContactList.push(contacto);
   });
 
   return section;

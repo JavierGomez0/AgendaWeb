@@ -1,7 +1,80 @@
+/* ===== CONTENEDOR PRINCIPAL ===== */
 .Contactos {
-width: 100%;
-padding: 10px;
-display: flex;
-flex-direction: column;
-gap: 10px;
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 28px;
+
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+
+  animation: fadeIn 0.4s ease;
+}
+
+/* ===== TÍTULO ===== */
+.Contactos h2 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 24px;
+  color: #333;
+}
+
+/* ===== ITEM CONTACTO ===== */
+.Contactos > div {
+  display: flex;
+  align-items: center;
+ justify-content: space-between;
+   gap: 14px;
+
+  padding: 14px 18px;
+  margin-bottom: 12px;
+
+  background: #fafafa;
+  border-radius: 12px;
+
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.Contactos > div:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+}
+
+/* ===== TEXTO ===== */
+.Contactos p {
+  flex: 1;                /* empuja el teléfono a la derecha */
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+}
+
+.Contactos p:first-child {
+  font-weight: 800;
+    position: absolute;      /* lo saca del flujo flex para centrarlo */
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+}
+
+.Contactos p:last-child {
+  color: #666;
+  font-size: 24px;
+}
+
+.Contactos img {
+  width: 26px;
+  height: 26px;
+  margin-right: 14px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
