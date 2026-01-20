@@ -44,7 +44,6 @@ let nuevoContacto = () => {
     contactos.push(contacto);
     saveContactsToStorage(contactos);
 
-    // Limpiar formulario
     userName.value = "";
     telefono.value = "";
 

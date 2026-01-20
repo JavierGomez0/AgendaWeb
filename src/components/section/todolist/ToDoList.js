@@ -49,7 +49,6 @@ todos.forEach((todo, index) => {
     section.replaceWith(ToDoList());
   });
 
-  // 🔥 TODO DENTRO DEL MISMO DIV
   div.appendChild(checkbox);
   div.appendChild(p);
   div.appendChild(prioridad);

@@ -8,7 +8,6 @@ let NuevoTodo = () => {
   input.type = "text";
   input.placeholder = "Ingresa la tarea";
 
-  // 🔽 PRIORIDAD
   const select = document.createElement("select");
 
   const normal = document.createElement("option");

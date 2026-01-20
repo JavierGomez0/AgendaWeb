@@ -23,54 +23,46 @@
   margin-bottom: 10px;
 }
 
-/* ✔ CHECKBOX */
 .ToDoList input[type="checkbox"] {
   width: 18px;
   height: 18px;
 }
 
-/* TEXTO */
 .ToDoList p {
   flex: 1;
   margin: 0;
-  font-size: 18px;   /* 👈 TAMAÑO CORRECTO */
+  font-size: 18px;  
   line-height: 1.4;
   color: #2e7d32;
 }
 
-/* 🔴 URGENTE */
 .ToDoList p.urgente {
   color: #e53935;
   font-weight: bold;
 }
 
-/* ✔ COMPLETADA */
 .ToDoList p.completada {
   text-decoration: line-through;
   opacity: 0.6;
 }
 
-/* 🟢🔴 CUADRO PRIORIDAD */
 .priority {
   padding: 4px 10px;
   border-radius: 6px;
   font-size: 13px;
   font-weight: bold;
   color: white;
-  white-space: nowrap; /* 👈 NO SE ROMPE */
+  white-space: nowrap; 
 }
 
-/* VERDE */
 .priority.normal {
   background-color: #2ecc71;
 }
 
-/* ROJO */
 .priority.urgente {
   background-color: #e53935;
 }
 
-/* ❌ ELIMINAR */
 .ToDoList button {
   background: transparent;
   border: none;
