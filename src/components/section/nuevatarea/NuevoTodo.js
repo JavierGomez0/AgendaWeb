@@ -1,4 +1,4 @@
-import { getTodosFromStorage, saveTodosToStorage } from "./storageTodo.js";
+import { getTodosFromStorage, saveTodosToStorage } from "../todolist/storageTodo.js";
 
 let NuevoTodo = () => {
   let section = document.createElement("form");
